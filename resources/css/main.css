@@ -40,6 +40,23 @@ footer {
   }
 
 /*--------------------- GLOBAL DEFAULTS   */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 18px;
+    line-height: 1.8;
+    color: var(--main-text-color);
+}
+
+video, 
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
 
 /*--------------------- HEADINGS AND TYPE   */
 
@@ -58,7 +75,7 @@ footer {
 
 .layout-full-width {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: var(--spacer-large);
 }
 
 /*--------------------- HEADER   */
