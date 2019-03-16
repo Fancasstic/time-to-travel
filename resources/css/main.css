@@ -15,6 +15,22 @@ footer {
 /*--------------------- HEADINGS AND TYPE   */
 
 /*--------------------- LAYOUTS   */
+.layout-wide {
+    max-width: 1200px;
+
+    margin-bottom: 80px;
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.layout-full-width {
+    width: 100%;
+    margin-bottom: 80px;
+}
 
 /*--------------------- HEADER   */
 header {
