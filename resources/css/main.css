@@ -37,6 +37,8 @@ footer {
     --font-size-heading-small: 16px;
    
     --site-width: 1200px;
+
+    --font-heading: georgia, serif
   }
 
 /*--------------------- GLOBAL DEFAULTS   */
@@ -80,8 +82,25 @@ img {
 
 /*--------------------- HEADER   */
 header {
-    background-color: var)var(--alternative-bg-color)
+    background-color: var(--alternative-bg-color);
+    padding-top: var(--spacer);
 
+}
+
+header .layout-wide{
+    margin-bottom: 0;
+
+}
+
+.site-title {
+    color: var(--alternative-text-color);
+    text-align: right;
+    font-size: var(--font-size-site-title);
+    font-family: var(--font-heading);
+}
+
+.logo-wrapper {
+    float: left;
 }
 
 /*--------------------- NAVIGATION   */
