@@ -34,6 +34,17 @@
     --font-default: 'Raleway', sans-serif;
   }
 
+  @media screen and (min-width: 800px) {
+
+    :root {
+        --font-size-site-title: 54px;
+        --font-size-page-title: 80px;
+        --font-size-section-title: 48px;
+
+        --padder: 2%;
+    }
+  }
+
 /*--------------------- GLOBAL DEFAULTS   */
 * {
     box-sizing: border-box;
@@ -135,6 +146,65 @@ header .layout-wide{
 }
 
 /*--------------------- NAVIGATION   */
+
+.navigation {
+    background-color: var(--alternative-bg-color);
+}
+
+.nav-prompt {
+    background-color: var(--alternative-bg-color);
+    color: var(--alternative-text-color);
+
+    clear: both;
+    display: block;
+
+    padding-top: var(--padder);
+    padding-bottom: var(--padder);
+
+    width: 100%;
+
+    border: 0;
+    border-top: 1px solid var(--strong-text-color);
+}
+
+.nav-inner {
+    margin-bottom: 0;
+}
+
+.nav-inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-inner a {
+    text-transform: uppercase;
+    color: var(--alternative-text-color);
+    text-decoration: none;
+
+    border-bottom: 1px solid var(--border-color);
+
+    display: block;
+
+    padding: var(--spacer) 5px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .nav-prompt {
+        display: none;
+    }
+
+    .nav-inner ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-inner a {
+        border-bottom: 2px solid transparent;
+    }
+}
 
 /*--------------------- FOOTER   */
 footer {
