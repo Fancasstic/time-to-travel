@@ -332,3 +332,29 @@ input[type="email"] {
         justify-content: space-between;
     }
 }
+
+/* image gallery */
+
+.image-gallery ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.image-gallery li {
+    float: left;
+    max-width: 250px;
+    margin: 10px;
+}
+
+.image-gallery img {
+    filter: grayscale(100%);
+    transition: var(--transition-time);
+    box-shadow: 0px 1px 10px var(--strong-text-colour);
+}
+
+.image-gallery a:hover img {
+    filter: unset;
+    transform: scale(1.1);
+}
