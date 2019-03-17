@@ -14,6 +14,16 @@ $('.nav-prompt').click(function() {
     } else {
         $('.nav-inner').attr('aria-expanded', 'false');
 
+    };
+
+    if ($('.nav-prompt').text() == 'Open Navigation') {
+
+        $('.nav-prompt').text('Close Navigation');
+
+    } else {
+        $('.nav-prompt').text('Open Navigation');
+
+
     }
 
 });
