@@ -210,6 +210,11 @@ header .layout-wide{
     .nav-inner a {
         border-bottom: 2px solid transparent;
     }
+
+    .nav-inner .active {
+        border-bottom-color: var(--alternative-text-color);
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width: 800px) {
